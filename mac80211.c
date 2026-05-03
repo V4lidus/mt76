@@ -336,8 +336,6 @@ mt76_init_sband(struct mt76_phy *phy, struct mt76_sband *msband,
 	ht_cap->ht_supported = true;
 	ht_cap->cap |= IEEE80211_HT_CAP_SUP_WIDTH_20_40 |
 		       IEEE80211_HT_CAP_GRN_FLD |
-		       IEEE80211_HT_CAP_SGI_20 |
-		       IEEE80211_HT_CAP_SGI_40 |
 		       (1 << IEEE80211_HT_CAP_RX_STBC_SHIFT);
 
 	ht_cap->mcs.tx_params = IEEE80211_HT_MCS_TX_DEFINED;
@@ -352,7 +350,6 @@ mt76_init_sband(struct mt76_phy *phy, struct mt76_sband *msband,
 	vht_cap->vht_supported = true;
 	vht_cap->cap |= IEEE80211_VHT_CAP_RXLDPC |
 			IEEE80211_VHT_CAP_RXSTBC_1 |
-			IEEE80211_VHT_CAP_SHORT_GI_80 |
 			(3 << IEEE80211_VHT_CAP_MAX_A_MPDU_LENGTH_EXPONENT_SHIFT);
 
 	return 0;

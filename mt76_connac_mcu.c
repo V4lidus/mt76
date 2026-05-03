@@ -1734,7 +1734,7 @@ void mt76_connac_mcu_build_rnr_scan_param(struct mt76_dev *mdev,
 }
 EXPORT_SYMBOL_GPL(mt76_connac_mcu_build_rnr_scan_param);
 
-#define MT76_CONNAC_SCAN_CHANNEL_TIME		60
+#define MT76_CONNAC_SCAN_CHANNEL_TIME		100
 int mt76_connac_mcu_hw_scan(struct mt76_phy *phy, struct ieee80211_vif *vif,
 			    struct ieee80211_scan_request *scan_req)
 {
