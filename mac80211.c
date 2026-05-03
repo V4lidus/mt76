@@ -465,6 +465,7 @@ mt76_phy_init(struct mt76_phy *phy, struct ieee80211_hw *hw)
 
 	hw->txq_data_size = sizeof(struct mt76_txq);
 	hw->uapsd_max_sp_len = IEEE80211_WMM_IE_STA_QOSINFO_SP_ALL;
+	hw->max_mtu = 7500;
 
 	if (!hw->max_tx_fragments)
 		hw->max_tx_fragments = 16;
